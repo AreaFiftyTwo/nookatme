@@ -1,0 +1,17 @@
+$font: (
+  family: "Raleway", // default body/text font
+  family-header: "Poppins", // default header font
+  family-logo: "Rubik", // only for the NookAtMe title/logo
+  weight: 400,
+  weight-bold: 600,
+  weight-logo: 900, // for the NookAtMe title/logo in Rubik font
+);
+
+$color: (
+  light: #B5DCA8,
+  med: #4FAF8D,
+  dark: #086443,
+  bg: #ffffff, // default light bg color
+  text: #000000, // default text color that goes on light bg
+  text-light: #ffffff, // default text color that goes on med to dark bgs
+)
