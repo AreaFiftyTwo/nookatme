@@ -1,3 +1,13 @@
+/* How to use in scss files
+
+The "family" in $font
+  font-family: _font(family);
+
+The "med" in $color
+  color: _color(med);
+
+*/
+
 $font: (
   family: "Raleway", // default body/text font
   family-header: "Poppins", // default header font
