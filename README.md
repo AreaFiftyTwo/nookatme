@@ -1,3 +1,9 @@
+## Guidelines
+
+The project style guide (naming, sass, and variation conventions) [can be found here](https://github.com/AreaFiftyTwo/nookatme/blob/master/STYLEGUIDE.md).
+
+Server-side code can be found at [nookatme-server](https://github.com/AreaFiftyTwo/nookatme-server). The project board is [here](https://github.com/orgs/AreaFiftyTwo/projects/1).
+
 ## Scripts
 
 In the project directory, you can run:
