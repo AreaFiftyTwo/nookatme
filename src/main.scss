@@ -1,5 +1,5 @@
 // fonts
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&family=Rubik:wght@400;900&display=swap');
 
 // abstracts
 @import 'scss/abstracts/breakpoints';
@@ -9,3 +9,6 @@
 // base
 @import 'scss/base/reset';
 @import 'scss/base/typography';
+
+@import 'scss/layout/display';
+@import 'scss/layout/nav';

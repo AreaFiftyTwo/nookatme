@@ -20,8 +20,10 @@ $font: (
 $color: (
   light: #B5DCA8,
   med: #4FAF8D,
-  dark: #086443,
-  bg: #ffffff, // default light bg color
+  dark: #12585C,
+  grey-light: #E2E2E2, // default bg color for entire screen
+  grey-med: #C4C4C4,
+  bg: #ffffff, // default light bg color for all content boxes
   text: #000000, // default text color that goes on light bg
   text-light: #ffffff, // default text color that goes on med to dark bgs
 )
