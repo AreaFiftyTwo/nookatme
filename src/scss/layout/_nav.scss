@@ -1,0 +1,117 @@
+.body {
+  background-color: _color(grey-light);
+  height: calc(100vh - 10em);
+  margin: 6em 0em 4em;
+
+  @include break(med) {
+    margin: 0;
+    height: calc(100vh - 3em);
+  }
+}
+
+.nav--desktop {
+  display: none;
+
+  & a {
+    color: _color(dark);
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      color: _color(med);
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  @include break(med) {
+    display: block;
+
+    & ul {
+      @include flex-space-between-align-center;
+      height: 1em;
+      padding: 1em;
+    }
+
+    & li:first-of-type {
+      font-family: _font(family-logo), sans serif;
+      font-size: 1.5rem;
+      font-weight: _font(weight-logo);
+      width: 30%;
+    }
+  }
+}
+
+.nav__header--mobile {
+  @include flex-space-between-align-center;
+  color: _color(dark);
+  height: 4em;
+  padding: 2em 0em 0em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  & a {
+    color: _color(dark);
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+
+    &:hover, :focus, :active {
+      color: _color(med);
+      transition: all 0.4s ease-in-out;
+    }
+  }
+
+  & .nav__logo--mobile {
+    font-family: _font(family-logo), sans serif;
+    font-size: 2rem;
+    font-weight: _font(weight-logo);
+    padding: 1rem;
+  }
+
+  & .nav__search--mobile {
+    height: 2rem;
+    width: 2rem;
+    padding: 1rem;
+
+    & svg {
+      height: 100%;
+    }
+  }
+
+  @include break(med) {
+    display: none;
+  }
+}
+
+.nav__footer--mobile {
+  bottom: 0;
+  background-color: _color(med);
+  height: 4em;
+  position: fixed;
+  width: 100%;
+
+  & ul {
+    @include flex-space-between-align-center;
+  }
+
+  & li {
+    height: 1.9rem;
+    width: 1.9rem;
+    padding: 1rem;
+
+    & svg {
+      color: _color(grey-light);
+      height: 100%;
+      transition: all 0.4s ease-in-out;
+
+      &:hover, :focus, :active {
+        color: _color(dark);
+        transition: all 0.4s ease-in-out;
+      }
+    }
+  }
+
+  @include break(med) {
+    display: none;
+  }
+}
