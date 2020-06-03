@@ -6,26 +6,26 @@ import { ReactComponent as ListIcon} from '../../assets/svg/list-alt-regular.svg
 import { ReactComponent as UserIcon} from '../../assets/svg/user-solid.svg';
 import { ReactComponent as FriendsIcon} from '../../assets/svg/users-solid.svg';
 
-const NavFooterMobile = () => {
+const NavFooterMobile: React.FC = () => {
   return (
     <div className="nav__footer--mobile">
       <ul>
         <li>
           <Link to="/">
-            <HomeIcon alt="home" />
+            <HomeIcon title="Home" />
           </Link>
         </li>
         <li>
-          <LeafIcon alt="catalog" />
+          <LeafIcon title="Catalog" />
         </li>
         <li>
-          <ListIcon alt="checklists" />
+          <ListIcon title="Checklists" />
         </li>
         <li>
-          <FriendsIcon alt="social" />
+          <FriendsIcon title="Social" />
         </li>
         <li>
-          <UserIcon alt="my profile" />
+          <UserIcon title="My Profile" />
         </li>
       </ul>
     </div>
