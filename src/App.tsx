@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import { Provider } from 'react-redux';
 import store from './store';
@@ -13,7 +12,7 @@ import NavDesktop from './components/nav/NavDesktop';
 import NavHeaderMobile from './components/nav/NavHeaderMobile';
 import NavFooterMobile from './components/nav/NavFooterMobile';
 
-function App() {
+const App: React.FC = () => {
   return (
     <Provider store={store}>
       <Router>

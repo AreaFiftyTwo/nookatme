@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const NavDesktop = () => {
+const NavDesktop: React.FC = () => {
   return (
     <div className="nav--desktop">
       <ul>
