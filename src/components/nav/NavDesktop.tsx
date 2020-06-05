@@ -9,7 +9,7 @@ const NavDesktop: React.FC = () => {
           <Link to="/">NookAtMe</Link>
         </li>
         <li>
-          Catalog
+          <Link to="/catalog">Catalog</Link>
         </li>
         <li>
           Checklists

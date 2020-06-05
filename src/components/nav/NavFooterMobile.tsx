@@ -16,7 +16,9 @@ const NavFooterMobile: React.FC = () => {
           </Link>
         </li>
         <li>
-          <LeafIcon title="Catalog" />
+          <Link to="/catalog">
+            <LeafIcon title="Catalog" />
+          </Link>
         </li>
         <li>
           <ListIcon title="Checklists" />
