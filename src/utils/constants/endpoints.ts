@@ -11,7 +11,8 @@ const endpoints = {
   production: {
     baseUrl: baseUrl.production,
     apiItems: baseUrl.production + "api/items/"
-  }
+  },
+  images: "https://acnhcdn.com/latest/FtrIcon/"
 }
 
 export default endpoints;

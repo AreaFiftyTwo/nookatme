@@ -8,9 +8,9 @@ import { Provider } from 'react-redux';
 import store from '../../store';
 import '../../main.scss';
 import Home from '../Home/Home';
-import NavDesktop from '../Nav/NavDesktop';
-import NavHeaderMobile from '../Nav/NavHeaderMobile';
-import NavFooterMobile from '../Nav/NavFooterMobile';
+import NavDesktop from '../nav/NavDesktop';
+import NavHeaderMobile from '../nav/NavHeaderMobile';
+import NavFooterMobile from '../nav/NavFooterMobile';
 import Catalog from '../Catalog/Catalog';
 import Category from '../Catalog/Category';
 

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { getItems } from '../../utils/axios';
 import endpoints from '../../utils/constants/endpoints';
 import CategoryItem from './CategoryItem';
+import { capitalize } from '../../utils/names';
 
 interface Props {
   match: {
@@ -40,7 +41,7 @@ const Category = (props: Props) => {
   return (
     <div className="category">
       <div className="category__header">
-        Categories {'> ' + category.slice(0, 1).toUpperCase() + category.slice(1)}
+        Categories {'> ' + capitalize(category)}
       </div>
       <div className="category__items-list">
         {items.map((item: Item) => <CategoryItem key={item._id} item={item} />)}
