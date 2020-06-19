@@ -2,7 +2,6 @@
   background-color: _color(grey-light);
   height: calc(100vh - 10em);
   margin: 6em 0em 4em;
-  overflow-y: scroll;
 
   @include break(med) {
     margin: 0;

@@ -8,10 +8,10 @@ import CatalogCell from './CatalogCell';
 const Catalog: React.FC = () => {
   return (
     <div className="catalog">
-      <div className="catalog__header">Catalog</div>
+      <div className="catalog__header">Pick a category</div>
       <div className="catalog__all">
         {categories.map((c: Category) => (
-          <CatalogCell category={c}/>
+          <CatalogCell category={c} />
         ))}
       </div>
     </div>
