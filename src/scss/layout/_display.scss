@@ -47,4 +47,12 @@
   justify-content: space-between;
 }
 
+// mixins for grid ( if neccesary)
+
+@mixin grid-center{
+  margin-top:5%;
+  display:grid;
+  justify-items: center;
+}
+
 

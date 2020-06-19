@@ -1,13 +1,10 @@
 .catalog__all{
-  margin-top:5%;
-  display:grid;
+  @include grid-center;
   grid-template-columns: 50% 50%;
-  justify-items: center;
+
 
   @include break(sm){
-    margin-top:5%;
-    display:grid;
-    justify-items: center;
+    @include grid-center;
     grid-template-columns: 25% 25% 25% 25%;
     grid-auto-rows: 20%;
   }
