@@ -13,4 +13,6 @@
 @import 'scss/layout/display';
 @import 'scss/layout/nav';
 
-@import 'scss/layout/category'
+// modules/pages
+@import 'components/App/App';
+@import 'components/Catalog/scss/Category';

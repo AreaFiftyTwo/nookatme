@@ -22,18 +22,20 @@ const App: React.FC = () => {
         <NavHeaderMobile />
 
         <div className="body">
-          <Switch>
-            <Route
-              path="/catalog/:category"
-              component={Category}
-            />
-            <Route path="/catalog">
-              <Catalog />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
+          <div className="body__wrapper">
+            <Switch>
+              <Route
+                path="/catalog/:category"
+                component={Category}
+              />
+              <Route path="/catalog">
+                <Catalog />
+              </Route>
+              <Route path="/">
+                <Home />
+              </Route>
+            </Switch>
+          </div>
         </div>
 
         <NavFooterMobile />
