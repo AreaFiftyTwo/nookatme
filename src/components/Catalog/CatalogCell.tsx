@@ -7,14 +7,14 @@ interface Props {
 }
 
 const CatalogCell = (props: Props) => {
-  const { category }: { category: Category} = props;
+  const { category }: { category: Category } = props;
   const { name, icon, api } = category;
 
   return (
-    <div className="category-item">
-      <Link to={`/catalog/${api}`}>
+    <div className='category-item__container'>
+      <Link to={`/catalog/${api}`} className="category-item" >
         <div className="category-item__icon">
-          <img src={require(`../../assets/categories/${icon}`)} alt={name}/>
+          <img src={require(`../../assets/categories/${icon}`)} alt={name} />
         </div>
         <div className="category-item__name">
           {name}

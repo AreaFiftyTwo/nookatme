@@ -1,0 +1,31 @@
+.catalog__all{
+  @include grid-center;
+  grid-template-columns: 50% 50%;
+
+
+  @include break(sm){
+    @include grid-center;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-auto-rows: 20%;
+  }
+}
+
+.category-item__icon {
+  background-color: rgb(79, 175, 141);
+}
+
+.category-item {
+  text-align: center;
+  text-decoration: none;
+}
+
+.category-item__name {
+  font-family: _font(family-header);
+  font-weight: _font(weight-bold);
+  padding: 1rem;
+  color:rgb(21, 88, 92);
+}
+
+.category-item__container {
+  padding-top:25px
+}
