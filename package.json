@@ -33,7 +33,7 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
     "save-dev": "0.0.1-security",
-    "uuid": "^8.1.0"
+    "uuidv4": "^6.1.0"
   },
   "scripts": {
     "start": "react-scripts start",

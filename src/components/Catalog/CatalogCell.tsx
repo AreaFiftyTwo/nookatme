@@ -11,8 +11,8 @@ const CatalogCell = (props: Props) => {
   const { name, icon, api } = category;
 
   return (
-    <div >
-      <Link to={`/catalog/${api}`} className="category-item">
+    <div className='category-item__container'>
+      <Link to={`/catalog/${api}`} className="category-item" >
         <div className="category-item__icon">
           <img src={require(`../../assets/categories/${icon}`)} alt={name} />
         </div>

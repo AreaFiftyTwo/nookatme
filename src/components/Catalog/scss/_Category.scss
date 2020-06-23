@@ -11,7 +11,7 @@
 }
 
 .category-item__icon {
-  background-color: rgb(79, 175, 141)
+  background-color: rgb(79, 175, 141);
 }
 
 .category-item {
@@ -21,7 +21,11 @@
 
 .category-item__name {
   font-family: _font(family-header);
-  font-weight: _font(weight-logo);
+  font-weight: _font(weight-bold);
   padding: 1rem;
   color:rgb(21, 88, 92);
+}
+
+.category-item__container {
+  padding-top:25px
 }
