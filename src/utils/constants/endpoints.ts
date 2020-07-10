@@ -6,11 +6,13 @@ const baseUrl = {
 const endpoints = {
   development: {
     baseUrl: baseUrl.development,
-    apiItems: baseUrl.development + "api/items/"
+    apiItems: baseUrl.development + "api/items/",
+    auth: baseUrl.development + "auth/"
   },
   production: {
     baseUrl: baseUrl.production,
-    apiItems: baseUrl.production + "api/items/"
+    apiItems: baseUrl.production + "api/items/",
+    auth: baseUrl.production + "auth/"
   },
   images: "https://acnhcdn.com/latest/FtrIcon/"
 }
