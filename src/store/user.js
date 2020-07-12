@@ -1,4 +1,5 @@
 import axios from 'axios';
+import history from '../history';
 import endpoints from '../utils/constants/endpoints';
 const env = process.env.NODE_ENV || 'development';
 const endpointURL = endpoints[env].auth;
@@ -19,6 +20,16 @@ export const me = () => async dispatch => {
     dispatch(getUser(data || defaultUser));
   } catch (error) {
     //TODO: Make error handling action
+    console.error(error);
+  }
+}
+
+export const auth = (method, email, password) => async dispatch => {
+  try {
+    const res = await axios.post(endpointURL + method, { email, password });
+    dispatch(getUser(res.data));
+    history.push('/');
+  } catch (error) {
     console.error(error);
   }
 }

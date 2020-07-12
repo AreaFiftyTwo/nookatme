@@ -13,6 +13,8 @@ import NavHeaderMobile from '../nav/NavHeaderMobile';
 import NavFooterMobile from '../nav/NavFooterMobile';
 import Catalog from '../Catalog/Catalog';
 import Category from '../Catalog/Category';
+import Login from '../Auth/Login/Login';
+import Signup from '../Auth/Signup/Signup';
 
 const App: React.FC = () => {
   return (
@@ -29,6 +31,12 @@ const App: React.FC = () => {
             />
             <Route path="/catalog">
               <Catalog />
+            </Route>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route path="/signup">
+              <Signup />
             </Route>
             <Route path="/">
               <Home />
