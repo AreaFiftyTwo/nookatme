@@ -3,3 +3,10 @@ export interface Category {
   icon: string,
   api: string
 }
+
+export interface UseInput {
+  value: string,
+  setValue: Function,
+  bind: object,
+  reset: Function
+}
